@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formstyle.css" />
+    <title>Latihan Form</title>
+  </head>
+  <body>
+    <div class="formcontainer">
+      <h2>Contact Us</h2>
+      <div class="name">
+        <div class="firstname">
+          <label for="firtsname">First Name*</label>
+          <input type="text" id="firstname" name="firstname" required />
+          <small class="error-message">This field is required.</small>
+        </div>
+
+        <div class="lastname">
+          <label for="lastname">Last Name*</label>
+          <input type="text" id="lastname" name="lastname" required />
+          <small class="error-message">This field is required.</small>
+        </div>
+      </div>
+
+      <div class="email">
+        <label for="email">Email*</label>
+        <input type="text" id="email" name="email" required />
+        <small class="error-message">This field is required.</small>
+      </div>
+
+      <div class="query">
+        <label>Query Type*</label>
+        <div class="radiogroup">
+          <div class="flexquery">
+            <div class="general">
+              <label
+                ><input
+                  type="radio"
+                  name="queryType"
+                  value="general"
+                  required
+                />
+                General Enquiry</label
+              >
+            </div>
+
+            <div class="request">
+              <label
+                ><input type="radio" name="queryType" value="support" /> Support
+                Request</label
+              >
+            </div>
+          </div>
+        </div>
+        <small class="error-message">Please select a query type.</small>
+      </div>
+
+      <div class="message">
+        <label for="message">Message*</label>
+        <textarea id="message" name="message" required></textarea>
+        <small class="error-message">This field is required.</small>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" id="consent" name="consent" required /> I
+          consent to being contacted by the team *
+        </label>
+        <small class="error-message">You must agree to continue.</small>
+      </div>
+
+      <button clastype="submit" id="btn_submit">Submit</button>
+      <p class="success-message">Your message has been sent successfully!</p>
+    </div>
+  </body>
+</html>
